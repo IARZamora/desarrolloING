@@ -1,0 +1,38 @@
+<html><CENTER><P><CENTER><FONT FACE="Times New Romanr" SIZE="9"> CALCULADORA (IARZ)</FONT></CENTER></P>
+    <head>
+        <meta charset="UTF-8">
+        <title>CALCULADORA (IARZ)</title>    
+   
+   
+           <script type="text/javascript">
+               function sumar()
+           {	    	
+                   //DEFINO LAS VARIABLES
+                   var num1 = document.getElementById("val1").value;
+                    var num2 = document.getElementById("val2").value;        
+             
+                    result = parseInt(num1) + parseInt(num2)
+                           result2 = parseInt(num1) - parseInt(num2)                                                                                                          
+                           result3 = parseInt(num1) * parseInt(num2)
+                           result4 = parseInt(num1) / parseInt(num2)
+                    document.getElementById("resS").value = result;
+                           document.getElementById("resR").value = result2;
+                           document.getElementById("resM").value = result3;
+                           document.getElementById("resD").value = result4;
+   
+                   }	        
+            </script> 	
+    </head>
+    <body>
+        <form name="form1">
+            Primer dato  : <input type="text" id="val1" >  <br><br>
+            Segundo dato : <input type="text" id="val2" >  <br><br><br><br>	
+             <input type="button" name="btn" onclick="sumar()" value="RESULTADO">   <br><br>
+            El resultado de suma: <input type="text" id="resS" ><br>
+                   El resultado de resta: <input type="text" id="resR" ><br>
+                   El resultado de multiplicacion: <input type="text" id="resM" ><br>
+                   El resultado de division: <input type="text" id="resD" ><br>		
+        </form>
+       
+    </body>
+    </html>
