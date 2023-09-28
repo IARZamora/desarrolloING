@@ -42,5 +42,5 @@ def calculadora():
     else:
         print("Opción no válida")
 
-# Llamar a la función principal de la calculadora
+# Llamar a la función principal
 calculadora()
